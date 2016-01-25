@@ -43,11 +43,11 @@ int LinkList_InsertNodeBefore(IN LinkList *pstLinkList,
 int LinkList_DeleteNode(IN LinkList *pstLinkList,
                         IN LinkListNode pstLinkListNode);
 
-int LinkList_SetNodeData();
+int LinkList_SetNodeData(IN LinkList *pstLinkList, IN Data *pstData);
 
 int LinkList_GetNodeData();
 
-int LinkList_GetListLength();
+int LinkList_GetListLength(IN LinkList *pstLinkList, OUT int *piLength);
 
 int LinkList_IsListEmpty();
 

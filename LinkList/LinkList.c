@@ -119,3 +119,20 @@ int LinkList_DeleteNode(IN LinkList *pstLinkList,
     return OK;
 }
 
+int LinkList_SetNodeData(IN LinkList *pstLinkList, IN Data *pstData)
+{
+}
+int LinkList_GetListLength(IN LinkList *pstLinkList, OUT int *piLength)
+{
+    int iLength = 0;
+    LinkListNode pstListNode = NULL;
+
+    pstListNode = pstLinkList->pstHead;
+    while (pstListNode != NULL)
+    {
+        pstListNode = pstListNode->pstNext;
+        iLength++;
+    }
+    *piLength = iLength;
+    return OK;
+}
