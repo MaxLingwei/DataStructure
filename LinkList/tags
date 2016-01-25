@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Data	LinkList.h	/^}Data;$/;"	t	typeref:struct:tagData
+ERROR	LinkList.h	4;"	d
+IN	LinkList.h	1;"	d
+LinkList	LinkList.h	/^}LinkList;$/;"	t	typeref:struct:tagLinkList
+LinkListNode	LinkList.h	/^typedef tagLinkList *LinkListNode;$/;"	t
+LinkList_ClearList	LinkList.c	/^int LinkList_ClearList(IN LinkList *pstLinkList)$/;"	f
+LinkList_CreateList	LinkList.c	/^int LinkList_CreateList(IN LinkList *pstLinkList)$/;"	f
+LinkList_DestroyList	LinkList.c	/^int LinkList_DestroyList(IN LinkList *pstLinkList)$/;"	f
+OK	LinkList.h	3;"	d
+OUT	LinkList.h	2;"	d
+iData	LinkList.h	/^    int iData;$/;"	m	struct:tagData
+iListLen	LinkList.h	/^    int iListLen;$/;"	m	struct:tagLinkList
+pstHead	LinkList.h	/^    LinkListNode pstHead;$/;"	m	struct:tagLinkList
+pstNext	LinkList.h	/^    struct tagLinkList *pstNext;$/;"	m	struct:tagLinkList	typeref:struct:tagLinkList::tagLinkList
+pstTail	LinkList.h	/^    LinkListNode pstTail;$/;"	m	struct:tagLinkList
+stData	LinkList.h	/^    Data stData;$/;"	m	struct:tagLinkList
+tagData	LinkList.h	/^typedef struct tagData$/;"	s
+tagLinkList	LinkList.h	/^struct tagLinkList$/;"	s
+tagLinkList	LinkList.h	/^typedef struct tagLinkList$/;"	s
