@@ -27,10 +27,10 @@ struct tagStack
 typedef tagStack *Stack;
 
 int InitStack(IN Stack pstStack);
-int DestroyStack();
-int ClearStack();
-int IsEmptyStack();
-int PopStack();
-int PushStack();
-int GetLengthOfStack();
-int GetTopOfStack();
+int DestroyStack(IN Stack pstStack);
+int ClearStack(IN Stack pstStack);
+int IsEmptyStack(IN Stack pstStack);
+int PopStack(IN Stack pstStack, Data *pstData);
+int PushStack(IN Stack pstStack, Data *pstData);
+int GetLengthOfStack(IN Stack pstStack, OUT int *piLength);
+int GetTopOfStack(IN Stack pstStack, Data *pstData);
