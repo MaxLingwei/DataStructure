@@ -3,6 +3,8 @@
 
 #define IN
 #define OUT
+#define TRUE 1
+#define FALSE 0
 
 
 typedef struct tagData
