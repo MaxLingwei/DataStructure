@@ -1,8 +1,13 @@
 #ifndef DLIST_H
 #define DLIST_H
 
-
 #include <stdio.h>
+
+#define EMPTY 0
+#define TRUE 1
+#define FALSE 0
+#define OK 0
+#define ERROR -1
 
 typedef struct DListElmt_
 {
@@ -22,8 +27,8 @@ typedef struct Dlist_
 
 
 /*Public interface*/
-void dlist_init(Dlist *list, void (*destroy)(void *data));
-void dlist_destroy(Dlist *list);
+int dlist_init(Dlist *list, void (*destroy)(void *data));
+int dlist_destroy(Dlist *list);
 int dlist_ins_next(Dlist *list, DListElmt *element, const void *data);
 int dlist_ins_prev(Dlist *list, DListElmt *element, const void *data);
 int dlist_remove(Dlist *list, DListElmt *element, void **data);
