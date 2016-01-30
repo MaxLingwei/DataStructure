@@ -3,6 +3,12 @@
 
 #include <stdio.h>
 
+#define OK 0
+#define ERROR -1
+#define TRUE 1
+#define FALSE 0
+#define EMPTY 0
+
 typedef struct CListElmt_
 {
     void *data;
